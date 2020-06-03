@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Ecuación Primer Grado</title>
+</head>
+
+<body onload="asignaEcuacion()">
+    <div class="datos">
+        <label for="">Nombre completo:</label>
+        <input type="text" class="name">
+        <label for="">Grupo:</label>
+        <input type="text">
+        <p>Instrucciones:<br>
+            ¿Cuál es la solución a la ecuación?.
+            Si vas a usar decimales solo usa 2.
+        </p>
+    </div>
+
+    <div class="content">
+
+        <label for="">Ecuación:
+            <input type="text" name="" id="ecuacion" disabled></label>
+        <label for="">x=
+            <input type="text" name="" id="solucion"></label>
+            <p id=resultado></p>
+        <!-- <label for="">Ecuación:
+            <input type="text" name="" id="ecuacion" disabled></label>
+        <label for="">Solución:
+            <input type="text" name="" id="solucion"></label>
+            <p id=resultado></p>
+        <label for="">Ecuación:
+            <input type="text" name="" id="ecuacion" disabled></label>
+        <label for="">Solución:
+            <input type="text" name="" id="solucion"></label>
+            <p id=resultado></p> -->
+
+        <input type="button" onclick="valida()" value="Verificar">
+        <input type="button" id="otra" hidden onclick="asignaEcuacion()" value="Otra ecuación">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
