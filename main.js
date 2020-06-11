@@ -1,4 +1,7 @@
 function asignaEcuacion() {
+    let fecha = getFecha();
+    let date = new Date();
+    fecha.value =date.getDate() + "/" + (date.getMonth() +1) + "/" + date.getFullYear();
     let ecuacion = getEcuacion();
     this.a = randomInt(20, -20, 0);
     this.b = randomInt(20, -20, 21);
@@ -72,4 +75,7 @@ function getResultado() {
 }
 function getBotonOtra() {
     return document.getElementById("otra");
+}
+function getFecha() {
+    return document.getElementById("fecha");
 }
