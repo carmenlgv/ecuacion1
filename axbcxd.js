@@ -7,7 +7,7 @@ function asignaEcuacion() {
     this.a = randomInt(20, -20, 21);
     this.b = randomInt(20, -20, 21);
     this.c = randomInt(20, -20, this.a);
-    this.d = randomInt(20, -20, 21);
+    this.d = randomInt(20, -20, this.b);
     this.intentos = 0;
     // let varA = this.a==1?"":this.a;
     // let varC = this.c==1?"":this.c;
